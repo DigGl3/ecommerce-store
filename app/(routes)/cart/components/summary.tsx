@@ -15,7 +15,7 @@ const Summary = () => {
     const removeAll = useCart((state) => state.removeAll);
 
     useEffect(() => {
-        if(searchParams.get("succes") ){
+        if(searchParams.get("success") ){
             toast.success("Payment complete");
             removeAll();
         }
